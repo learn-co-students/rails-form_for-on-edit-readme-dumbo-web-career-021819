@@ -1,9 +1,10 @@
-<%= form_tag posts_path do %>
-  <label>Post title:</label><br>
-  <%= text_field_tag :title %><br>
+<%= form_for @post do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
 
-  <label>Post Description</label><br>
-  <%= text_area_tag :description %><br>
+  <%= f.label :description %>
+  <%= f.text_area :description %>
 
-  <%= submit_tag "Submit Post" %>
+  <%= f.submit %>
+
 <% end %>
