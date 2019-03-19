@@ -29,3 +29,4 @@ class PostsController < ApplicationController
 		redirect_to @post
 	end
 end
+
